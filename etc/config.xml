@@ -13,9 +13,9 @@
 	-->		
     <default>
         <design>
-            <breadcrumbs>
-                <breadcrumbs_enabled>1</breadcrumbs_enabled>
-            </breadcrumbs>		
+            <search_engine_robots>
+                <force_deny_indexing>0</force_deny_indexing>
+            </search_engine_robots>		
         </design>
     </default>
 </config>

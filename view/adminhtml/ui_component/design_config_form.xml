@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright © 2011-2017 Karliuka Vitalii(karliuka.vitalii@gmail.com)
+ * 
+ * See COPYING.txt for license details.
+ */
+-->
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="other_settings">
+        <!-- search engine robots fieldset -->
+		<fieldset name="search_engine_robots">
+            <field name="force_deny_indexing" formElement="select">
+                <settings>
+                    <dataType>text</dataType>
+                    <label translate="true">Force Deny Indexing</label>
+					<notice translate="true">Force the Meta Robots Tag as NOINDEX,NOFOLLOW. Warning, Denyes the Indexing of the Site! Use Only on Developer Server.</notice>
+                    <dataScope>force_deny_indexing</dataScope>
+                </settings>
+                <formElements>
+                    <select>
+                        <settings>
+                            <options class="Magento\Config\Model\Config\Source\Yesno"/>
+                        </settings>
+                    </select>
+                </formElements>
+            </field>
+        </fieldset>
+    </fieldset>
+</form>
